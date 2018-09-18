@@ -4684,6 +4684,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!4 &941674581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400052, guid: c6acf3f29c109e4439950c8f6a85cb2b,
+    type: 3}
+  m_PrefabInternal: {fileID: 941674576}
 --- !u!1001 &953253993
 Prefab:
   m_ObjectHideFlags: 0
@@ -8790,6 +8795,7 @@ GameObject:
   - component: {fileID: 2018271280}
   - component: {fileID: 2018271279}
   - component: {fileID: 2018271281}
+  - component: {fileID: 2018271282}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -8931,6 +8937,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b56763d0ddf4d840a9ab9fd7a0a78d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2018271282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2018271272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261feb75bde29d147a11d021c814c0fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 941674581}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 5.5, z: -22}
 --- !u!1001 &2021815994
 Prefab:
   m_ObjectHideFlags: 0
