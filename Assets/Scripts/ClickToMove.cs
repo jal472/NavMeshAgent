@@ -13,7 +13,7 @@ public class ClickToMove : MonoBehaviour {
 	void Start () {
         animator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
-
+        script = GameObject.FindObjectOfType<panicTrigger>();
 	}
 	
 	// Update is called once per frame
