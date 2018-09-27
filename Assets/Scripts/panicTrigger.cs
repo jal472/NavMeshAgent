@@ -10,11 +10,13 @@ public class panicTrigger : MonoBehaviour {
     public static Transform objTransform;
     bool readyForPanic;
     public bool panicExists;
+    public WaypointController waypointController;
     // Use this for initialization
     void Start () {
         objTransform = this.transform;
+        waypointController = GameObject.FindObjectOfType<WaypointController>();
         // readyForPanic = false;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -37,7 +39,13 @@ public class panicTrigger : MonoBehaviour {
 		    if (Input.GetMouseButton(1))
             {
                 panicExists = true;
+                waypointController.panicDestinationSetter();
                 Debug.Log("Right mouse button has been clicked");
             }
+
+        if (Input.GetMouseButton(0))
+        {
+            panicExists = false;
+        }
 	}
 }

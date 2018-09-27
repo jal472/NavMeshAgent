@@ -14,6 +14,7 @@ public class ClickToMove : MonoBehaviour {
         animator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         script = GameObject.FindObjectOfType<panicTrigger>();
+
 	}
 	
 	// Update is called once per frame
@@ -40,21 +41,6 @@ public class ClickToMove : MonoBehaviour {
         {
             running = true;
         }
-
-        // the line below is what is causing the console errors
-        // it has something to do with the inspector and instantiating the object but i coudlnt figure it out yet
-        // once we can get the console message to not happen ADD THIS INSIDE OF THE IF STATEMENT :
-                        //if (script.panicExists == true) {
-                        //navMeshAgent.SetDestination(RandomNavmeshLocation(4f)); }
-        // that line of code should make the soldier go to a random location on the map
-
-        if (script.panicExists)
-        {
-            Debug.Log("ok we got here");
-        }
-
-        //RaycastHit hit2;
-
 
         animator.SetBool("running", running);
 	}

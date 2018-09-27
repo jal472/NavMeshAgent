@@ -63,8 +63,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ClickToMove.cs" />
-    <Compile Include="Assets\Scripts\panicExists.cs" />
     <Compile Include="Assets\Scripts\panicTrigger.cs" />
+    <Compile Include="Assets\Scripts\SoldierState.cs" />
+    <Compile Include="Assets\Scripts\WaypointController.cs" />
     <None Include="Assets\ToonSoldiers_demo\ToonSoldiers_demo.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Jack/Documents/Fall 2018/Game Science/Games/NavMeshAgent/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
